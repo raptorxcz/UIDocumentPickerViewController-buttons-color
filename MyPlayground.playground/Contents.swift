@@ -3,10 +3,13 @@
 import UIKit
 import PlaygroundSupport
 
-UINavigationBar.appearance().tintColor = .white
-UINavigationBar.appearance().barTintColor = .red
-UINavigationBar.appearance().barStyle = UIBarStyle.blackTranslucent
-UINavigationBar.appearance().isTranslucent = false
+func setAppearanceForProject() {
+    UINavigationBar.appearance().tintColor = .white
+    UINavigationBar.appearance().barTintColor = .red
+    UINavigationBar.appearance().barStyle = UIBarStyle.blackTranslucent
+    UINavigationBar.appearance().isTranslucent = false
+}
+setAppearanceForProject()
 
 class MyViewController : UIViewController {
     override func loadView() {
